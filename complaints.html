@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Complaint - Dog Rehoming Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit a Complaint</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="available-dogs.html">Available Dogs</a> |
+            <a href="complaints.html">Submit a Complaint</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your Feedback Matters</h2>
+            <form onsubmit="submitComplaint(event)">
+                <input type="text" id="complaintName" placeholder="Your Name" required>
+                <input type="email" id="complaintEmail" placeholder="Your Email" required>
+                <textarea id="complaintText" placeholder="Your Complaint" required></textarea>
+                <button type="submit">Submit Complaint</button>
+            </form>
+            <p id="complaintConfirmation" style="display: none;">Thank you for your feedback. We will address your concerns promptly.</p>
+        </section>
+    </main>
+
+    <script>
+        function submitComplaint(event) {
+            event.preventDefault();
+            document.getElementById('complaintConfirmation').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('complaintConfirmation').style.display = 'none';
+            }, 3000);
+            document.querySelector('form').reset();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Dog Rehoming Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>

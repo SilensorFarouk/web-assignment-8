@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(64, 197, 153);
+}
+
+header {
+    background-color: ;
+    padding: 20px;
+    color: rgb(139, 108, 108);
+}
+nav{
+    color:blue;
+}
+.hero-img  {
+    
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+}
+input, textarea, button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(168, 199, 28);
+}
+
+#dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dog-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.dog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#applications {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+}

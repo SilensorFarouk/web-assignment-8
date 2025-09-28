@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Rehoming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dog Rehoming Center</h1>
+        <input type="text" id="searchBar" placeholder="Search for a dog..." onkeyup="searchDogs()">
+    </header>
+
+    <main>
+        <section id="dog-list">
+            <!-- Dog profiles will be added here dynamically -->
+        </section>
+
+        <section id="adoption-form">
+            <h2>Adoption Application</h2>
+            <form onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <textarea id="reason" placeholder="Reason for Adoption" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmationMessage" style="display: none;">Thank you for your application!</p>
+        </section>
+
+        <section id="applications">
+            <h2>Submitted Applications</h2>
+            <ul id="application-list">
+                <!-- Submissions will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
